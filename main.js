@@ -13,3 +13,4 @@ src="https://js.arcgis.com/4.12/"></script>
           center: [-95, 40] // longitude, latitude
         });
       });
+    </script>
