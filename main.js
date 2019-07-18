@@ -16,7 +16,7 @@ require([
           var lon = -95.7129;
           lat = 37.0902;
 
-	  view.graphics.add(ptGraphic);
+	  
 
           //view the map 
           var view = new MapView({
@@ -24,6 +24,7 @@ require([
               map: map,
               zoom: 4,
               center: [lon, lat]
+	      
           });
       });
 var pt = new Point({
