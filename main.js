@@ -23,22 +23,13 @@ require([
               container: "viewDiv",
               map: map,
               zoom: 4,
-              center: [lon, lat]
+              center: [lon, lat],
+	      view.graphics.add(ptGraphic);
 	      
           });
       });
-var pt = new Point({
-  latitude: 40.792,
-  longitude: -77.871 
-});
+var pt = new Point({latitude: 40.792,longitude: -77.871});
 
-var sym = new SimpleMarkerSymbol({
-  color: "blue",
-  style: "square",
-  size: 12
-});
+var sym = new SimpleMarkerSymbol({color: "blue",style: "square",size: 12});
 
-var ptGraphic = new Graphic({
-  geometry:pt,
-  symbol:sym
-});
+var ptGraphic = new Graphic({geometry:pt,symbol:sym});
