@@ -8,7 +8,7 @@ var map = new Map({basemap: "oceans", layers: [housingLayer]});
         var view = new MapView({
           container: "viewDiv", // Reference to the scene div created in step 5
           map: map, // Reference to the map object created before the scene
-          zoom: 4, // Sets zoom level based on level of detail (LOD)
-          center: [40, 73] // Sets center point of view using longitude,latitude
+          zoom: 10, // Sets zoom level based on level of detail (LOD)
+           center: [ -73.871537, 40.702842]  // Sets center point of view using longitude,latitude
         });
       });
