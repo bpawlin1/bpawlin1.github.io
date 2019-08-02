@@ -11,7 +11,12 @@ body,
   height: 50%;
   width: 50%;
 }
-
+#ReadingList {
+  padding: 25;
+  margin: 50;
+  height: 50%;
+  width: 50%;
+}
 #reflectionDiv {
   padding: 10px;
 }
