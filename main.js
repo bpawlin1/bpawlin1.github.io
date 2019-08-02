@@ -1,13 +1,11 @@
 require([
           "esri/Map",
           "esri/views/MapView",
-	  "esri/geometry/Point",
-          "esri/symbols/SimpleMarkerSymbol",
-	  "esri/graphic",
-          "dojo/domReady!"
+	  "esri/Graphic", 
+	  "dojo/domReady!"
       ],
       function(
-          Map, MapView, Point) {
+          Map, MapView,Graphic) {
           //create map 
           var map = new Map({
               basemap: "topo"
@@ -24,12 +22,31 @@ require([
               map: map,
               zoom: 4,
               center: [lon, lat],
-	      view.graphics.add(ptGraphic);
-	      
+	            
           });
+var point = {
+        type: "point",
+        longitude: -118.29507,
+        latitude: 34.13501
+      };
+
+      var simpleMarkerSymbol = {
+        type: "simple-marker",
+        color: [226, 119, 40],  // orange
+        outline: {
+          color: [255, 255, 255], // white
+          width: 1
+        }
+      };
+
+      var pointGraphic = new Graphic({
+        geometry: point,
+        symbol: simpleMarkerSymbol
       });
-var pt = new Point({latitude: 40.792,longitude: -77.871});
 
-var sym = new SimpleMarkerSymbol({color: "blue",style: "square",size: 12});
+      view.graphics.add(pointGraphic);
+    });
 
-var ptGraphic = new Graphic({geometry:pt,symbol:sym});
+      });
+
+      
