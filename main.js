@@ -1,6 +1,6 @@
 require(["esri/Map", "esri/views/MapView", "esri/layers/TileLayer"], function(Map, MapView,TileLayer) {
         
-var transportationLayer = new TileLayer({url: "https://services3.arcgis.com/f8FBNX4bfDyc804R/arcgis/rest/services/Locations/FeatureServer",opacity: 0.7});
+var transportationLayer = new TileLayer({url: "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trailheads/FeatureServer/0",opacity: 0.7});
 
 
 
