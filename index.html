@@ -13,25 +13,47 @@
     <script src="https://js.arcgis.com/4.12/"></script>
     <script src="main.js"></script>  
   </head>
+
   <body>
+    <header>
+      <img src="C:\Users\bpawling\Documents\GitHub\Sites\bpawlin1.github.io\Bob-omb.jpg" class="profile-img">
+      <nav>
+        <ul>
+          <li><a href="#Map">Map</a></li>
+	  <li><a href="#Reading List">Reading list</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
+
       <section id="Map">
-	<h2>Trail Head map</h2>
-	<p>Map of some trail heads.</p>
-        <div id="viewDiv"></div>
-     	<span id="layerToggle" class="esri-widget"> <input type="checkbox" id="trailheadsLayer" checked /> TrailHead </span>
+        <div id="container">
+	  <div id="viewDiv"></div>
+       	<div class="section-inner">
+          <h1>Trail Head map</h1>
+          <span id="layerToggle" class="esri-widget"> <input type="checkbox" id="trailheadsLayer" checked /> TrailHead </span>
+	  <p>map of some stuff. </p>
+         </div>
+	
+         </div>
+      </section>
+     
+      <section id="Reading List">
+        <div class="section-inner">
+	  <h2>Zoeys reading tracker</h2>
+            <p>Running tally of the books we read.</p>
+              <h3>Books Read</h3>
+                <ul>
+                  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSSThv4SuZH26hiCwd-vel3uVBKCc5RSqjrvVGBINu5mpTFWkpjeC6RrYrmeMu9FaTjKi11RTrUlreb/pubhtml?widget=true&amp;headers=false" width=405px height=600px></iframe>
+                </ul>
+         </div>
       </section>
 
-      <section id = "Reading List"
-        <div id="ReadingList">
-	  <h2>Zoeys reading tracker</h2>
-	  <p>Running tally of the books we read.</p>
-    	  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSSThv4SuZH26hiCwd-vel3uVBKCc5RSqjrvVGBINu5mpTFWkpjeC6RrYrmeMu9FaTjKi11RTrUlreb/pubhtml?widget=true&amp;headers=false"></iframe>
- 	</div> 	
-      </section> 
-
     </Main>
-
+<footer>
+            © Copyright BP
+        </footer>
   </body>
 
 </html>
