@@ -1,10 +1,10 @@
-require(["esri/Map", "esri/views/MapView", "esri/layers/TileLayer"], function(Map, MapView,TileLayer) {
+require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer"], function(Map, MapView,FeatureLayer) {
         
-var transportationLayer = new TileLayer({url: "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trailheads/FeatureServer/0",opacity: 0.7});
+var trailheadsLayer = new FeatureLayer({url: "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trailheads/FeatureServer/0",opacity: 0.7});
 
 
 
-var map = new Map({basemap: "oceans", layers: [housingLayer]});
+var map = new Map({basemap: "oceans", layers: [trailheadsLayer]});
         var view = new MapView({
           container: "viewDiv", // Reference to the scene div created in step 5
           map: map, // Reference to the map object created before the scene
