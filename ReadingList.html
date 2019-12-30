@@ -6,7 +6,7 @@
       name="viewport"
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
     />
-    <title>Map Map Map</title>
+    <title>Reading List</title>
     
     <link rel="stylesheet" href="main.css"></link>
     <link rel="stylesheet" href="https://js.arcgis.com/4.12/esri/themes/light/main.css"/>
@@ -23,7 +23,7 @@
           history.go(-1);
       if (pass1.toLowerCase() == "letmein") {
           alert('You Got it Right!');
-          location.href = "ProtectedPage.html";
+          window.open('www.wikihow.com');
       break;
   } 
     testV+=1;
@@ -39,7 +39,7 @@
     <header>
     <div class="headerContainer">
       <img src="Images\ocean.jpg" class="profile-img" width=2000px height=100px>
-      <div class="headerText">Web Site For Stuff</div>
+      <div class="headerText">Reading List</div>
     </div>  
   </header>
  
@@ -51,55 +51,32 @@
       <img src="Images\Bob-omb.jpg" class="profile-img" width=50px height=50px>
       <h3>Additional Resources</h3>
          <ul>
+             <li><a href="index.html">Home</a></li>
              <li><a href="#Map">Map</a></li>
-	           <li><a href="ReadingList.html">Reading list</a></li>
-             <li><a href="#ClassesTaken">Classes Taken</a></li>
+	           <li><a href="#Reading List">Reading list</a></li>
          </ul>
          <FORM>
-            <input type="button" value="Enter Protected Area" onClick="passWord()">
-          </FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
       </nav>
    
 
     <main>
-
-      <section id="Map">
-         <div id="container">
-	       <div id="viewDiv"></div>
-       	 <div class="section-inner">
-         <h1>Trail Head map</h1>
-            <span id="layerToggle" class="esri-widget"> <input type="checkbox" id="trailheadsLayer" checked /> TrailHead </span>
-	          <p>map of some stuff. </p>
+      <section id="Reading List">
+        <div class="section-inner">
+	  <h2>Zoeys reading tracker</h2>
+            <p>Running tally of the books we read.</p>
+              <h3>Books Read</h3>
+                <ul>
+                  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSSThv4SuZH26hiCwd-vel3uVBKCc5RSqjrvVGBINu5mpTFWkpjeC6RrYrmeMu9FaTjKi11RTrUlreb/pubhtml?widget=true&amp;headers=false" width=405px height=600px></iframe>
+                </ul>
          </div>
-	 
-       <section id="ClassesTaken">
-         <div id="container">
-          <center>
-          <h2>Class List</h2>
-          <p>Running list of classes I have taken.</p>
-          <h3>Classes Taken</h3>
-            <Table>
-              <tr>
-                <th>Class Name</th>
-                <th>Year Taken</th>
-              </tr>
-              <tr>
-                <td>Foundations of Software Engineering</td>
-                <td>Spring 2018</td>
-            </Table>
-            </center>
-          </div>
-        </section>
+      </section>
 
-        
-     
-      
-    </main>
-    </body>
+    </Main>
 <footer>
-  <div id="footer">
             © Copyright BP
-</footer>
-  
+        </footer>
+  </body>
 
 </html>
