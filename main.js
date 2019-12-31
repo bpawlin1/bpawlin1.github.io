@@ -1,3 +1,5 @@
+// map view
+
     require(["esri/Map", "esri/views/MapView","esri/layers/FeatureLayer"], function(Map, MapView,FeatureLayer) {
         var map = new Map({
           basemap: "terrain"
@@ -16,3 +18,27 @@
 
       map.add(trailheadsLayer);
       });
+
+
+
+// Pasword zone
+    function passWord() 
+  {
+  var testV = 1;
+  var pass1 = prompt('Please Enter Your Password',' ');
+    while (testV < 3) {
+      if (!pass1) 
+          history.go(-1);
+      if (pass1.toLowerCase() == "letmein") {
+          alert('You Got it Right!');
+          location.href = "ProtectedPage.html";
+      break;
+  } 
+    testV+=1;
+    var pass1 = 
+    prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+  }
+    if (pass1.toLowerCase()!="password" & testV ==3) 
+    history.go(-1);
+    return " ";
+  } 
