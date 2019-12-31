@@ -21,15 +21,16 @@
  
       
    
-  
+
 
     <nav>
       <img src="Images\Bob-omb.jpg" class="profile-img" width=50px height=50px>
       <h3>Additional Resources</h3>
          <ul>
+             <li><a href="index.html">Home</a></li>
              <li><a href="#Map">Map</a></li>
 	           <li><a href="ReadingList.html">Reading list</a></li>
-             <li><a href="ClassesTaken.html">Classes Taken</a></li>
+             <li><a href="#ClassesTaken">Classes Taken</a></li>
          </ul>
          <FORM>
             <input type="button" value="Enter Protected Area" onClick="passWord()">
@@ -38,17 +39,29 @@
    
 
     <main>
-
-      <section id="Map">
+       <section id="ClassesTaken">
          <div id="container">
-	       <div id="viewDiv"></div>
-       	 <div class="section-inner">
-         <h1>Trail Head map</h1>
-            <span id="layerToggle" class="esri-widget"> <input type="checkbox" id="trailheadsLayer" checked /> TrailHead </span>
-	          <p>map of some stuff. </p>
-     </div>    
-	 </section>
-
+          
+          <center>
+          <h2>Class List</h2>
+          <p>Running list of classes I have taken.</p>
+          <h3>Classes Taken</h3>
+            <Table>
+              <tr>
+                <th>Class Name</th>
+                <th>Year Taken</th>
+              </tr>
+              <tr>
+                <td>Foundations of Software Engineering</td>
+                <td>Spring 2018</td>
+            </Table>
+            </center>
+          </div>
+        </section>
+  
+        
+     
+      
     </main>
     </body>
 <footer>
