@@ -22,7 +22,6 @@
 
 
 
-
 // map view
     
     require(["esri/Map", "esri/views/MapView","esri/layers/FeatureLayer"], function(Map, MapView,FeatureLayer) {
@@ -44,6 +43,7 @@
       map.add(trailheadsLayer);
       });
   
+	// Create a request variable and assign a new XMLHttpRequest object to it.
 
 
 
