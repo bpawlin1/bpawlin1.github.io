@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Projects</title>
+    <title>SRS Project</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
 
@@ -83,16 +83,11 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h1 class="featurette-heading">Apache Kafka</h1>
-        <p class="lead">Java Hadoop project that utilized Apache ZooKeeper and APache Kafka to read/search for certain search terms provided by a java application running on a virtual machine.</p>
+        <h1 class="featurette-heading">Student Registration System</h1>
+        <p class="lead">This was a class project to create a Java EE and eventually Java Spring web application for students to create an account, register for classes and for admins to run reports. This project started out as a Java EE project using an MVC design pattern. The data was persisted with an H2 database and was deployed using Wildfly server. The project was eventually upgraded to a Java spring application  deployed to Apache Tomcat.</p>
 
-        <h3 class="featurette-heading">Project Steps:</h3>
-        <ul class="list-group">
-          <li class="list-group-item">Install and setup Apache zookeeper/Kafka</li>
-          <li class="list-group-item">Obtain Twitter api credentials</li>
-          <li class="list-group-item">Create Kafka topic and read tweets into topic</li>
-          <li class="list-group-item">Review topic</li>
-        </ul>
+        
+        
         <br><br>
       <hr class="featurette-divider">
       <br>
@@ -101,27 +96,30 @@
 
         <div>
           
-            <h3 class="featurette-heading">Starting ZooKeeper and Kafka:</h3>
-            <p class="lead">Command line was utilized to start both services</p>
-            <img src="../images/Kafka/startup.JPG" class="img-fluid" alt="..." />
+            <h3 class="featurette-heading">Log in Screen:</h3>
+            <p class="lead">Login security was provided by a username/password that was checked by a SQL query to the H2 database.</p>
+            <img src="../images/SRS/SRS_login_JavaEE.JPG" class="img-fluid" alt="..." />
+
           </div>
-        </div>
+          </div>
       <br>
         <div>
           
-            <h3 class="featurette-heading">Java Producer:</h3>
-            <p class="lead">Code snippet of the java producer to read in the tweets. </p>
-            <img src="../images/Kafka/kafkaTwitterProducer.png" class="img-fluid" alt="..."/>
+            <h3 class="featurette-heading">Main Page:</h3>
+            <p class="lead">Once logged in, the user would be take to a page with an option to either run a report or register to a class.  </p>
+            <img src="../images/SRS/SpringSRSMainPage.JPG" class="img-fluid" alt="..."/>
           </div>
         </div>
       
         <div>
           
-            <h3 class="featurette-heading">Console Output:</h3>
-            <p class="lead">Output being displayed while the program is running. </p>
-            <img src="../images/Kafka/ConsoleOutput.png" class="img-fluid" alt="..." />
+            <h3 class="featurette-heading">Register to a class:</h3>
+            <p class="lead">The user could register to a class based on their selection if the class was not full. If the class was full, they would receive an error page with the option to return to the class registration page.   </p>
+            <img src="../images/SRS/SpringSRSCourse.JPG" class="img-fluid" alt="..." />
           </div>
         </div>
+
+        
       
 
       </div>

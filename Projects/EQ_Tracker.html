@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Projects</title>
+    <title>EQ Tracker</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
 
@@ -83,16 +83,11 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h1 class="featurette-heading">Apache Kafka</h1>
-        <p class="lead">Java Hadoop project that utilized Apache ZooKeeper and APache Kafka to read/search for certain search terms provided by a java application running on a virtual machine.</p>
+        <h1 class="featurette-heading">Equipment Tracker</h1>
+        <p class="lead">This was a class project to create a Java EE application that would be used to keep track of client information, employee details, equipment usgae, equipment location, and equipment issues. The application followed the MVC design pattern, persisted the data in a MySQL database, and was deployed on Apache Tomcat.  </p>
 
-        <h3 class="featurette-heading">Project Steps:</h3>
-        <ul class="list-group">
-          <li class="list-group-item">Install and setup Apache zookeeper/Kafka</li>
-          <li class="list-group-item">Obtain Twitter api credentials</li>
-          <li class="list-group-item">Create Kafka topic and read tweets into topic</li>
-          <li class="list-group-item">Review topic</li>
-        </ul>
+        
+        
         <br><br>
       <hr class="featurette-divider">
       <br>
@@ -101,27 +96,61 @@
 
         <div>
           
-            <h3 class="featurette-heading">Starting ZooKeeper and Kafka:</h3>
-            <p class="lead">Command line was utilized to start both services</p>
-            <img src="../images/Kafka/startup.JPG" class="img-fluid" alt="..." />
+            <h3 class="featurette-heading">Database Scheme:</h3>
+            <p class="lead">The database scheme is shown below and was modeled in MySQL. </p>
+            <img src="../images/EQ_Tracker/EQ_Scheme.jpg" class="img-fluid" alt="..." />
+
           </div>
-        </div>
+          </div>
       <br>
-        <div>
+
+      <div>
           
-            <h3 class="featurette-heading">Java Producer:</h3>
-            <p class="lead">Code snippet of the java producer to read in the tweets. </p>
-            <img src="../images/Kafka/kafkaTwitterProducer.png" class="img-fluid" alt="..."/>
+            <h3 class="featurette-heading">Login:</h3>
+            <p class="lead">The user would enter the login name to enter.</p>
+            <img src="../images/EQ_Tracker/EQ_login.jpg" class="img-fluid" alt="..."/>
           </div>
         </div>
       
         <div>
+        <div>
           
-            <h3 class="featurette-heading">Console Output:</h3>
-            <p class="lead">Output being displayed while the program is running. </p>
-            <img src="../images/Kafka/ConsoleOutput.png" class="img-fluid" alt="..." />
+            <h3 class="featurette-heading">Main Page:</h3>
+            <p class="lead">Once logged in, the user would be take to a page with an option to either checkin/out equipemnt or run a report </p>
+            <img src="../images/EQ_Tracker/EQ_options.jpg" class="img-fluid" alt="..."/>
           </div>
         </div>
+      
+        <div>
+          <div>
+          
+            <h3 class="featurette-heading">Check In/Out Equipment:</h3>
+            <p class="lead">The user could checkout equipment provided that the date range did not have any usgae for it. When they are ready to check in, they would enter their reservation ID and update the reservation status.</p>
+            <img src="../images/EQ_Tracker/EQ_checkout.jpg" class="img-fluid" alt="..." />
+            <img src="../images/EQ_Tracker/EQ_checkin.jpg" class="img-fluid" alt="..." />
+          </div>
+        </div>
+
+
+
+        <div>
+          <div>
+          
+            <h3 class="featurette-heading">Reports:</h3>
+            <p class="lead">The user could run a variety of reports to view a list of clients, reservations for that week, reservation per user, and equipment location. </p>
+            <img src="../images/EQ_Tracker/EQ_reports.jpg" class="img-fluid" alt="..." />
+            <br><br>
+            <img src="../images/EQ_Tracker/EQ_clientlist.jpg" class="img-fluid" alt="..." />
+            <br><br>
+            <img src="../images/EQ_Tracker/EQ_currentres.jpg" class="img-fluid" alt="..." />
+            <br><br>
+            <img src="../images/EQ_Tracker/EQ_equipmentlocation.jpg" class="img-fluid" alt="..." />
+
+
+
+        </div>
+
+        
       
 
       </div>
